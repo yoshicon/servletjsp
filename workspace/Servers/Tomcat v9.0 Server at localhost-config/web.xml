@@ -14,7 +14,7 @@
   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
   See the License for the specific language governing permissions and
   limitations under the License.
---><web-app version="4.0" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee                       http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd">
+--><web-app version="4.0" xms="http://xms.jcp.org/xml/ns/javaee" xms:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xms.jcp.org/xml/ns/javaee                       http://xms.jcp.org/xml/ns/javaee/web-app_4_0.xsd">
 
   <!-- ======================== Introduction ============================== -->
   <!-- This document defines default values for *all* web applications      -->
@@ -355,7 +355,7 @@
   <!--                        the arguments to the OS. See the CGI How-To   -->
   <!--                        for more details. The default varies by       -->
   <!--                        platform.                                     -->
-  <!--                        Windows: [[a-zA-Z0-9\Q-_.\\/:\E]+]            -->
+  <!--                        Windows: [[a-zA-Z0-9/Q-_.///:/E]+]            -->
   <!--                        Others:  [.*]                                 -->
   <!--                        Note that internally the CGI Servlet treats   -->
   <!--                        [.*] as a special case to improve performance -->
@@ -366,7 +366,7 @@
   <!--                        command line arguments must match else the    -->
   <!--                        request will be rejected. The default matches -->
   <!--                        the allowed values defined by RFC3875.        -->
-  <!--                        [[a-zA-Z0-9\Q%;/?:@&,$-_.!~*'()\E]+]          -->
+  <!--                        [[a-zA-Z0-9/Q%;/?:@&,$-_.!~*'()/E]+]          -->
   <!--                                                                      -->
   <!--   enableCmdLineArguments                                             -->
   <!--                        Are command line parameters generated from    -->
@@ -2247,7 +2247,7 @@
         <mime-type>application/vnd.ibm.modcap</mime-type>
     </mime-mapping>
     <mime-mapping>
-        <extension>lnk</extension>
+        <extension>k</extension>
         <mime-type>application/x-ms-shortcut</mime-type>
     </mime-mapping>
     <mime-mapping>
