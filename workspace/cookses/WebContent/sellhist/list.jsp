@@ -51,6 +51,7 @@
 		out.println("품번 : " + listCookie.getValue());
 		out.println("<br><hr>");
 		Set<String> listSet = new HashSet<String>();
+		
 		for(int q=0; q<listArr.length; q++)
 			listSet.add(listArr[q]);
 			
